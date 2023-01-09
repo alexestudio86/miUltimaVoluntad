@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import 'w3-css/w3.css';
+import './app.css';
+import { Notice } from './components/Notice';
+import { Navbar } from "./components/Navbar";
+import { Header } from './components/Header';
+import { Features } from './components/Features'
+import { Categories } from './components/Categories';
+import { Footer } from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='w3-row h-100 w3-light-gray'>
+      <Notice />
+      <Navbar />
+      <Header />
+      <Features />
+      <Categories />
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export default App
