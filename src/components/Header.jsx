@@ -1,4 +1,5 @@
 import './header.css';
+import { Link } from 'react-router-dom';
 
 
 export function Header(){
@@ -15,7 +16,7 @@ export function Header(){
             <div className='w3-half h-100'>
                 <div className='w3-display-container h-100'>
                     <div className='w3-display-middle'>
-                        <a href='#' className='w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off'>Leer mas...</a>
+                        <Link to='..' className='w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off'>Leer mas...</Link>
                     </div>
                 </div>
             </div>

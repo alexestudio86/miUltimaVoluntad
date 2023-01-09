@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
@@ -13,12 +14,12 @@ export function Footer ( ){
                             <h1 className='w3-xlarge'>Enlaces</h1>
                             <ul className='w3-medium p-2'>
                                 <li>
-                                    <a href='#'>Términos y condiciones</a>
+                                    <Link to='..'>Términos y condiciones</Link>
                                 </li>
-                                    <li>
-                                        <a href='#'>Aviso de privacidad</a>
-                                    </li>
-                                </ul>
+                                <li>
+                                    <Link href='..'>Aviso de privacidad</Link>
+                                </li>
+                            </ul>
                         </div>
                         <div className='w3-col m4'>
                             <h1 className='w3-xlarge'>Contacto</h1>
@@ -37,15 +38,15 @@ export function Footer ( ){
             {/* Social Media */}
             <div className='w3-col m12 w3-light-gray'>
                 <div className='container w3-center'>
-                    <a href='#' className='w3-button'>
+                    <Link to='..' className='w3-button'>
                         <FontAwesomeIcon className='w3-xlarge' icon={faFacebook} />
-                    </a>
-                    <a href='' className='w3-button'>
+                    </Link>
+                    <Link to='..' className='w3-button'>
                         <FontAwesomeIcon className='w3-xlarge' icon={faInstagram} />
-                    </a>
-                    <a href='' className='w3-button'>
+                    </Link>
+                    <Link to='..' className='w3-button'>
                         <FontAwesomeIcon className='w3-xlarge' icon={faTiktok} />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </footer>
