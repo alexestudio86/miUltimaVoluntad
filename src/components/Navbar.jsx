@@ -8,9 +8,9 @@ export function Navbar(){
                     <img src={logo} height='50px' width='auto' alt='Logo' />
                 </a>
                 <div className='w3-right w3-padding-large w3-text-orange fw-bold'>
-                    <a href='#' className='w3-bar-item w3-button'>Link 1</a>
-                    <a href='#' className='w3-bar-item w3-button'>Link 2</a>
-                    <a href='#' className='w3-bar-item w3-button'>Link 3</a>
+                    <a href='#' className='w3-bar-item w3-button'>Planes</a>
+                    <a href='#' className='w3-bar-item w3-button'>Info</a>
+                    <a href='#' className='w3-bar-item w3-button'>Contacto</a>
                 </div>
             </div>
         </nav>
