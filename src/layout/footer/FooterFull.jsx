@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 
-export function Footer ( ){
+export function FooterFull ( ){
     return(
         <footer className='w3-row w3-white'>
             {/* Enlaces y contancto */}
