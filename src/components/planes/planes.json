@@ -1,0 +1,18 @@
+[
+    {
+        "title":        "Basic",
+        "bgColor":      "w3-light-gray",
+        "description":  ["10GB Storage", "10 Emails", "10 Domains", "Endless Support"],
+        "price":        10
+    },{
+        "title":        "Pro",
+        "bgColor":      "w3-gray",
+        "description":  ["25GB Storage", "25 Emails", "25 Domains", "Endless Support"],
+        "price":        25
+    },{
+        "title":        "Premium",
+        "bgColor":      "w3-black",
+        "description":  ["50GB Storage", "50 Emails", "50 Domains", "Endless Support"],
+        "price":        50
+    }
+]

@@ -1,4 +1,4 @@
-import { Feature } from './Feature';
+import { Feature } from '../components/features/Feature';
 import { faStar, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 

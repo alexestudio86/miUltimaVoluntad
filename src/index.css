@@ -68,3 +68,12 @@ figcaption {
 .h-auto {
     height: auto
 }
+.price:before {
+    content:"$ ";
+    font: bold 18px 'Amatic', sans-serif;
+}
+.price:after{
+    content: " usd";
+    font: bold 18px 'Amatic', sans-serif;
+    text-transform: uppercase;
+}

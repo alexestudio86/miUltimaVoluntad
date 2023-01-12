@@ -1,3 +1,4 @@
+import { Layout } from '../layout/Layout';
 import { createBrowserRouter } from 'react-router-dom';
 import { HomepageView } from '../views/HomepageView';
 import { PageView } from '../views/PageView'
@@ -5,10 +6,14 @@ import { PageView } from '../views/PageView'
 export const Rutas = createBrowserRouter([
     {
         path:'/',
-        element: <HomepageView />,
+        element: <Layout />,
         children: [
             {
-                path: '/:pageID',
+                index: true,
+                element: <HomepageView/>
+            },
+            {
+                path: '/:pageUrl',
                 element: <PageView />,
             }
         ]
