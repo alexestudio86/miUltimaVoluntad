@@ -2,6 +2,7 @@ import './index.css'
 import 'w3-css/w3.css'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { RouterProvider } from "react-router-dom";
 import { Rutas } from './routes/Rutas'
 
 import reportWebVitals from './reportWebVitals';
@@ -9,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Rutas />
+    <RouterProvider router={Rutas} />
   </React.StrictMode>
 );
 

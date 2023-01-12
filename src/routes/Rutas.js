@@ -1,15 +1,16 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import { HomepageView } from '../views/HomepageView';
 import { PageView } from '../views/PageView'
 
-export function Rutas( ){
-    return(
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<HomepageView />} />
-                <Route path='/p' element={<PageView />} />
-                <Route path='/p/quienes-somos' />
-            </Routes>
-        </BrowserRouter>
-    )
-}
+export const Rutas = createBrowserRouter([
+    {
+        path:'/',
+        element: <HomepageView />,
+        children: [
+            {
+                path: '/:pageID',
+                element: <PageView />,
+            }
+        ]
+    }
+])

@@ -1,11 +1,7 @@
 export function PageView ( props ){
     return(
         <>
-        {
-            if( props.pageType == 'quienesSomos' ){
-
-            }
-        }
+            <h1>Hola</h1>
         </>
     )
 }
