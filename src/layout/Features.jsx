@@ -1,21 +1,12 @@
 import { Feature } from '../components/features/Feature';
-import { faStar, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { features } from '../components/features/features';
 
 
 export function Features ( ){
     return(
         <div className='container py-4'>
             <div className='w3-row'>
-                <Feature bodyFeature={ {
-                    icono: faStar,
-                    texto: 'Contamos con asistencia inmediata las 24h del día',
-                    titulo: 'Asistencia 24h'
-                } } />
-                <Feature bodyFeature={ {
-                    icono: faPhone,
-                    texto: 'Recibirá asesoría total en caso de un siniestro',
-                    titulo: 'Apoyo en emergencias'
-                } } />
+                { features.map( (feature, index) => <Feature key={index} bodyFeature={feature} /> ) }
             </div>
         </div>
     )

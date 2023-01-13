@@ -1,17 +1,18 @@
-import Benefits from '../../assets/categories/benefits.jpg';
-import Information from '../../assets/categories/information.jpg';
 import Travel from '../../assets/categories/travel.jpg';
 
 // Insert images like template strings, are not allowed in json
 export const categorias = [
     {
-        title:    "Beneficioes",
-        imgUrl:   Benefits
+        title:    "Beneficios",
+        imgUrl:   require('../../assets/categories/benefits.jpg')
     },{
         title:    "Información",
-        imgUrl:   Information
+        imgUrl:   require('../../assets/categories/information.jpg')
     },{
         title:    "Viajes",
-        imgUrl:   Travel
+        imgUrl:   require('../../assets/categories/travel.jpg')
+    },{
+        title:    "Testimonios",
+        imgUrl:   require('../../assets/categories/testimonials.jpg')
     }
 ]

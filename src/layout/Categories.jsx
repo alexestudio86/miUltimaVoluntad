@@ -3,10 +3,10 @@ import { categorias } from '../components/categories/categorias'
 
 export function Categories () {
     return (
-        <main className='container py-4'>
+        <div className='container py-4'>
             <div className='w3-row'>
                 { categorias.map( (categoria, index) => <Category key={index} bodyArticle={categoria} /> ) }
             </div>
-        </main>
+        </div>
     )
 }
